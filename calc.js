@@ -3,7 +3,21 @@ function calcIt(){
   var op = prompt('Choose an operation:\n(A)ddition, (S)ustraction, (M)ultiplication, (D)ivision');
   console.log('op', op);
   op = op.toLowerCase();
+  console.log('op is', op)
 
+
+var A = 'A'.toLowerCase();
+
+
+
+  if ( (op != A) && (op !== "s") && (op !== "m") && (op !== "d") ) {
+
+    console.log('alert op is', op)
+    alert("Wong selection! Please choose between A, S, M or D for Addition, Sustraction, Multiplication or Division ----- var OP = " + op);
+      calcIt();
+  }
+
+  console.log('still running')
   var num1 = prompt('Choose your first number');
   console.log('num1', num1);
   var num2 = prompt('Choose your second number');
